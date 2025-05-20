@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables */
+$color-rock: #DB2E4D;
+$color-paper: #4664F4;
+$color-scissors: #EB9F0E;
+$color-lizard: #834EE3;
+$color-spock: #3FB7CD;
+$text: #ffffff;
+$text-secondary: #000000;
+
