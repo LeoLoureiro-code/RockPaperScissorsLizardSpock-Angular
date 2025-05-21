@@ -1,6 +1,8 @@
+@import "../../styles.scss";
+
 .scoreboard-div{
     width: 311px;
-    height: 96px;
+    height: 106px;
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
@@ -12,4 +14,27 @@
 .logo{
     width: auto;
     height: 100%;
+}
+
+.score{
+    min-width: 80px;
+    height: 72px;
+    background-color: $text;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.score-title{
+    font-size: 12px;
+    font-weight: 700;
+    color: #070d64a6;
+}
+
+.score-number{
+    font-size: 30px;
+    font-weight: 700;
 }
