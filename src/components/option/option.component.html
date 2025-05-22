@@ -1,1 +1,8 @@
-<p>option works!</p>
+<div 
+  class="option-outside-div" 
+  [ngStyle]="{ 'background-color': color }"
+>
+  <div class="option-div">
+    <img [src]="imageUrl" [alt]="name" />
+  </div>
+</div>
