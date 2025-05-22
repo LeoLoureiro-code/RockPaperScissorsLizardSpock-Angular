@@ -1,10 +1,31 @@
 @import "../../styles.scss";
 
 .hex-container{
+    position: relative;
     margin-top: 8rem;
-    width: 311px;
-    height: 305px;
+    width: 350px;
+    height: 400px;
     background-image: url("../../../public/assets/images/bg-pentagon.svg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
+
+.hex-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: $text;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Place buttons at 60° intervals around a circle */
+.pos1 { top: 0; left: 50%; transform: translate(-50%, 20%); }
+.pos2 { top: 30%; left: 93%; transform: translate(-40%, 60%); }
+.pos3 { top: 43%; left: 5%; transform: translate(-50%, -50%); }
+.pos4 { top: 95%; left: 20%; transform: translate(-50%, -100%); }
+.pos5 { top: 89%; left: 80%; transform: translate(-50%, -50%); }
