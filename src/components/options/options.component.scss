@@ -1,5 +1,11 @@
 @import "../../styles.scss";
 
+:host{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hex-container{
     position: relative;
     margin-top: 8rem;
