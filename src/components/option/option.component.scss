@@ -1,18 +1,43 @@
-// :host{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 100px;
-//     height: 100px;
-//     padding: 8px; 
-// }
+@import "../../styles.scss";
 
-// .option-outside-div{
+.option-outside-div{
+    padding: 8px; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
 
-//     border-radius: 50%; 
-//     background-color: #fd002e;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+&.rock {
+    background-color: $color-rock;
+}
 
-// }
+&.paper {
+    background-color: $color-paper;
+}
+
+&.scissors {
+    background-color: $color-scissors;
+}
+
+&.lizard{
+    background-color: $color-lizard;
+}
+
+&.spock{
+    background-color: $color-spock;
+}
+
+}
+
+.option-div {
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
