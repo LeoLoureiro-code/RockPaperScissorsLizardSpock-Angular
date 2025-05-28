@@ -1,32 +1,47 @@
 @import "../../styles.scss";
 
+:host{
+    width: 100%;
+}
+
 .option-outside-div{
-    padding: 8px; 
+    padding: 14px; 
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
+        
+@media (min-width: $laptop) {
+        width: 150px;
+        height: 150px;
+        padding: 20px; 
+    }
 
 &.rock {
     background-color: $color-rock;
+    box-shadow: 0px 7px 1px #9D1634;
 }
 
 &.paper {
     background-color: $color-paper;
+    box-shadow: 0px 7px 1px #2A45C2;
 }
 
 &.scissors {
     background-color: $color-scissors;
+    box-shadow: 0px 7px 1px #C76C1B;
 }
 
 &.lizard{
     background-color: $color-lizard;
+    box-shadow: 0px 7px 1px #5F37A8;
 }
 
 &.spock{
     background-color: $color-spock;
+    box-shadow: 0px 7px 1px #2D8DAB;
 }
 
 }
@@ -39,5 +54,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px -5px 1px #00000021;
 }
 
