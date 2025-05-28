@@ -1,32 +1,38 @@
 <div class="hex-container">
   <app-option 
-    class="hex-btn pos1 rock"
-    [name]="'rock'"
-    [color]="'rock'"
-    [imageUrl]="'assets/images/icon-rock.svg'">
-  </app-option>
-  <app-option 
-  class="hex-btn pos2"
-  [name]="'paper'"
-  [color]="'paper'"
-  [imageUrl]="'assets/images/icon-paper.svg'"
-  ></app-option>
-  <app-option 
-  class="hex-btn pos3"
+  class="hex-btn pos-scissors"
   [name]="'scissors'"
   [color]="'scissors'"
   [imageUrl]="'assets/images/icon-scissors.svg'"
+  (selected)="onSelect($event)"
   ></app-option>
   <app-option 
-  class="hex-btn pos4"
-  [name]="'lizard'"
-  [color]="'lizard'"
-  [imageUrl]="'assets/images/icon-lizard.svg'"
-  ></app-option>
-  <app-option 
-  class="hex-btn pos5"
+  class="hex-btn pos-spock"
   [name]="'spock'"
   [color]="'spock'"
   [imageUrl]="'assets/images/icon-spock.svg'"
+  (selected)="onSelect($event)"
+  ></app-option>
+  <app-option 
+  class="hex-btn pos-paper"
+  [name]="'paper'"
+  [color]="'paper'"
+  [imageUrl]="'assets/images/icon-paper.svg'"
+  (selected)="onSelect($event)"
+  ></app-option>
+  <app-option 
+    class="hex-btn pos-rock"
+    [name]="'rock'"
+    [color]="'rock'"
+    [imageUrl]="'assets/images/icon-rock.svg'"
+    (selected)="onSelect($event)"
+    >
+  </app-option>
+  <app-option 
+  class="hex-btn pos-lizard"
+  [name]="'lizard'"
+  [color]="'lizard'"
+  [imageUrl]="'assets/images/icon-lizard.svg'"
+  (selected)="onSelect($event)"
   ></app-option>
 </div>

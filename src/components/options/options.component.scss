@@ -1,11 +1,5 @@
 @import "../../styles.scss";
 
-:host{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .hex-container{
     position: relative;
     margin-top: 8rem;
@@ -16,22 +10,74 @@
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 50%;
+
+    @media (min-width: $laptop) {
+        width: 450px;
+        height: 450px;
+    }
 }
 
 .hex-btn {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 227px;
+  height: 227px;
   border-radius: 50%;
   border: none;
-  background-color: $text;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* Place buttons at 60° intervals around a circle */
-.pos1 { top: 0; left: 50%; transform: translate(-50%, 20%); }
-.pos2 { top: 30%; left: 93%; transform: translate(-40%, 60%); }
-.pos3 { top: 43%; left: 5%; transform: translate(-50%, -50%); }
-.pos4 { top: 95%; left: 20%; transform: translate(-50%, -100%); }
-.pos5 { top: 89%; left: 80%; transform: translate(-50%, -50%); }
+.pos-rock { 
+  top: 75%; 
+  left: 60%; 
+  transform: translate(0%, 0%); 
+
+  @media (min-width: $laptop) {
+        top: 75%;
+        left: 60%; 
+    }
+}
+
+.pos-paper { 
+  top: 23%; 
+  right: -45%; 
+  transform: translate(0%, 0%); 
+
+  
+  @media (min-width: $laptop) {
+        top: 20%;
+        right: -30%; 
+    }
+}
+
+.pos-scissors { 
+  top: 15%; 
+  left: 50%; 
+  transform: translate(-25%, -35%); 
+
+    @media (min-width: $laptop) {
+        left: 45%;
+        top: 5%;
+    }
+}
+
+.pos-lizard { 
+  top: 75%; 
+  right: 35%; 
+  transform: translate(0%, 0%); 
+
+  @media (min-width: $laptop) {
+        top: 75%;
+        right: 50%; 
+    }
+}
+
+.pos-spock { 
+  top: 23%; 
+  left: -15%; 
+  transform: translate(0%, 0%);
+
+  @media (min-width: $laptop) {
+        right: 40%; 
+    }
+}
