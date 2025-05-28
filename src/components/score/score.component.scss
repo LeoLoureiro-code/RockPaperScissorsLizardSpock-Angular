@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 .scoreboard-div{
-    width: 311px;
+    width: 400px;
     height: 106px;
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,11 @@
     border: 2px solid #8f8f8fa6;
     border-radius: 15px;
     padding: 1rem;
+
+    
+    @media (min-width: $laptop) {
+        width: 700px;
+    }
 }
 
 .logo{
@@ -17,8 +22,8 @@
 }
 
 .score{
-    min-width: 80px;
     height: 72px;
+    width: 80px;
     background-color: $text;
     border-radius: 10px;
     display: flex;
@@ -26,6 +31,7 @@
     align-items: center;
     justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .score-title{
