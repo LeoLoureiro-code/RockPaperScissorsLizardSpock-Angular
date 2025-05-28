@@ -1,0 +1,8 @@
+<div class="modal-backdrop" (click)="onClose()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        <div class="title-div">
+            <h1>RULES</h1><button class="close-modal" (click)="onClose()">X</button>
+        </div>
+        <img [src]="imageUrl" [alt]="altText" />
+    </div>
+</div>
