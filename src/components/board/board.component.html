@@ -1,4 +1,10 @@
 <div class="gameboard">
     <score></score>
-    <options></options>
+    <options (optionSelected)="handleOptionSelection($event)"></options>
+    <button (click)="openModal('assets/images/image-rules-bonus.svg')" class="btn">RULES</button>
+    <modal 
+        *ngIf="isModalOpen"
+        [imageUrl]="modalImageUrl"
+        (close)="closeModal()">
+    </modal>
 </div>
