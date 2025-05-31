@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
-:host{
-    width: 100%;
+:host {
+  @extend .option-outside-div; 
 }
 
 .option-outside-div{
