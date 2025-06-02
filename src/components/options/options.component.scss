@@ -28,56 +28,52 @@
 }
 
 .pos-rock { 
-  top: 75%; 
-  left: 60%; 
-  transform: translate(0%, 0%); 
+  top: 60%; 
+  left: 50%; 
 
   @media (min-width: $laptop) {
-        top: 75%;
-        left: 60%; 
+        top: 70%;
+        left: 55%; 
     }
 }
 
 .pos-paper { 
-  top: 23%; 
-  right: -45%; 
-  transform: translate(0%, 0%); 
+  top: 10%; 
+  left: 60%; 
 
   
   @media (min-width: $laptop) {
-        top: 20%;
-        right: -30%; 
+        top: 15%;
+        left: 70%; 
     }
 }
 
 .pos-scissors { 
-  top: 15%; 
-  left: 50%; 
-  transform: translate(-25%, -35%); 
+  top: -20%; 
+  left: 20%; 
 
     @media (min-width: $laptop) {
-        left: 45%;
-        top: 5%;
+        top: -20%;
+        left: 25%;
     }
 }
 
 .pos-lizard { 
-  top: 75%; 
-  right: 35%; 
-  transform: translate(0%, 0%); 
+  top: 60%; 
+  right: 45%; 
 
   @media (min-width: $laptop) {
-        top: 75%;
-        right: 50%; 
+        top: 70%;
+        right: 55%;
     }
 }
 
 .pos-spock { 
-  top: 23%; 
-  left: -15%; 
-  transform: translate(0%, 0%);
+  top: 10%; 
+  left: -25%; 
 
   @media (min-width: $laptop) {
-        right: 40%; 
+        top: 15%;
+        left: -20%;
     }
 }

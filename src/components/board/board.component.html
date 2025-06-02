@@ -1,10 +1,44 @@
 <div class="gameboard">
-    <score></score>
-    <options (optionSelected)="handleOptionSelection($event)"></options>
-    <button (click)="openModal('assets/images/image-rules-bonus.svg')" class="btn">RULES</button>
-    <modal 
-        *ngIf="isModalOpen"
-        [imageUrl]="modalImageUrl"
-        (close)="closeModal()">
-    </modal>
+<score></score>
+
+<!-- Show options or result -->
+  <options *ngIf="!selectedOption" (optionSelected)="handleOptionSelection($event)"></options>
+
+<!-- Show animation/result -->
+<div *ngIf="selectedOption && cpuOption" class="result-view animate-fight">
+    <div class="results-div">
+        <div class="player-option">
+            <p class="player-pick">You Picked</p>
+            <app-option
+            [name]="selectedOption"
+            [color]="selectedOption"
+            [imageUrl]="'assets/images/icon-' + selectedOption + '.svg'"
+            ></app-option>
+        </div>
+
+        <div class="cpu-option">
+            <p class="cpu-pick">The House Picked</p>
+            <app-option
+            [name]="cpuOption"
+            [color]="cpuOption"
+            [imageUrl]="'assets/images/icon-' + cpuOption + '.svg'"
+            ></app-option>
+        </div>
+</div>
+<div class="winner-message">
+    <h2 *ngIf="winner === 'tie'" class="winner-paragraph">IT'S A TIE</h2>
+    <h2 *ngIf="winner === 'user'"class="winner-paragraph">YOU WIN</h2>
+    <h2 *ngIf="winner === 'cpu'"class="winner-paragraph">CPU WINS</h2>
+    <button (click)="resetGame()" class="reset-game-btn">Play Again</button>
+</div>
+    
+</div>
+
+<button (click)="openModal('assets/images/image-rules-bonus.svg')" class="btn">RULES</button>
+
+<modal
+    *ngIf="isModalOpen"
+    [imageUrl]="modalImageUrl"
+    (close)="closeModal()">
+</modal>
 </div>

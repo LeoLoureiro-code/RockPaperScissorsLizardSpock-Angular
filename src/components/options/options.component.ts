@@ -16,4 +16,6 @@ export class OptionsComponent {
   onSelect(option: string) {
     this.optionSelected.emit(option);
   }
+
+
 }

@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 .gameboard{
     width: 100vw;
     min-height: 100vh;
@@ -6,6 +8,27 @@
     flex-direction: column;
     align-items: center;
 
+}
+
+.result-view{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-div{
+    display: flex;
+    justify-content: space-evenly;
+
+    
+    @media (min-width: $laptop) {
+        width: 700px;
+    }
+}
+
+.player-option{
+    width: 200px;
+    height: 200px;
 }
 
 .btn{
@@ -18,4 +41,49 @@
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
+}
+
+app-option{
+    width: 200px;
+    height: 200px;
+}
+
+.player-option, .cpu-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-pick, .cpu-pick{
+    font-family: Arial, Helvetica, sans-serif;
+    color: $text;
+    font-weight: 700;
+}
+
+.winner-message{
+    margin: 0 auto;
+
+    @media (min-width: $laptop) {
+        margin-top: 2rem;
+    }
+}
+
+.reset-game-btn{
+    width: 100%;
+    height: 48px;
+    background-color: $text;
+    color: $text-secondary;
+    margin-top: 2rem;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.winner-paragraph{
+    font-size: 50px;
+    color: $text;
 }
