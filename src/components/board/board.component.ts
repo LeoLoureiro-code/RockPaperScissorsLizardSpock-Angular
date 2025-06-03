@@ -10,7 +10,7 @@ import { OptionComponent } from '../option/option.component';
 @Component({
   selector: 'board',
   standalone: true,
-  imports: [ScoreComponent, OptionsComponent, ModalComponent, CommonModule, OptionComponent],
+  imports: [OptionsComponent, ModalComponent, CommonModule, OptionComponent, ScoreComponent],
   templateUrl: './board.component.html',
   styleUrl: './board.component.scss'
 })

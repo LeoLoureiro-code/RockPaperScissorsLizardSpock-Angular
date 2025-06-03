@@ -13,6 +13,10 @@
             [name]="selectedOption"
             [color]="selectedOption"
             [imageUrl]="'assets/images/icon-' + selectedOption + '.svg'"
+            [ngClass]="{
+            'winner': winner === 'user',
+            'loser': winner === 'cpu'
+            }"
             ></app-option>
         </div>
 
@@ -22,6 +26,10 @@
             [name]="cpuOption"
             [color]="cpuOption"
             [imageUrl]="'assets/images/icon-' + cpuOption + '.svg'"
+            [ngClass]="{
+            'winner': winner === 'cpu',
+            'loser': winner === 'user'
+            }"
             ></app-option>
         </div>
 </div>
