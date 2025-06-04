@@ -1,27 +1,75 @@
-# RockPaperScissorsLizardSpock
+# Rock Paper Scissors Lizard Spock – Angular Game
+
+A web-based game built with Angular where you play Rock, Paper, Scissors, Lizard, Spock against the computer. Includes animations, reactive scoring, and modern UI styling.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Angular – Framework
 
-## Code scaffolding
+* TypeScript – Language
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* RxJS – Reactive state management
 
-## Build
+* SCSS – Styling
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Features
 
-## Running unit tests
+* 5 game options: Rock, Paper, Scissors, Lizard, Spock
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Animated battle between user and CPU
 
-## Running end-to-end tests
+* Live score updates using BehaviorSubject
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Responsive design for all screen sizes
 
-## Further help
+* Modular architecture with reusable components
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* Winner determination based on game logic
+
+## Getting Started
+
+To run the project locally:
+
+# Clone the repository
+git clone https://github.com/leoloureiro-code/RockPaperScissorsLizardSpock-Angular.git
+cd rock-paper-scissors-lizard-spock-angular
+
+# Install dependencies
+npm install
+
+# Start the app
+ng serve
+
+##Game Logic
+
+* Scissors cuts Paper
+
+* Paper covers Rock
+
+* Rock crushes Lizard
+
+* Lizard poisons Spock
+
+* Spock smashes Scissors
+
+* Scissors decapitates Lizard
+
+* Lizard eats Paper
+
+* Paper disproves Spock
+
+* Spock vaporizes Rock
+
+* Rock crushes Scissors
+
+## Future Improvements
+
+Save score to localStorage
+
+Add sounds and better animations
+
+Track win/loss stats
+
+Implement multiplayer mode (local or online)
