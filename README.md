@@ -2,15 +2,12 @@
 
 A web-based game built with Angular where you play Rock, Paper, Scissors, Lizard, Spock against the computer. Includes animations, reactive scoring, and modern UI styling.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
 
 ## Tech Stack
 
 * Angular – Framework
 
 * TypeScript – Language
-
-* RxJS – Reactive state management
 
 * SCSS – Styling
 
