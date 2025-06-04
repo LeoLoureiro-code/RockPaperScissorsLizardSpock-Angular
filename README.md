@@ -29,14 +29,14 @@ A web-based game built with Angular where you play Rock, Paper, Scissors, Lizard
 
 To run the project locally:
 
-# Clone the repository
+## Clone the repository
 git clone https://github.com/leoloureiro-code/RockPaperScissorsLizardSpock-Angular.git
 cd rock-paper-scissors-lizard-spock-angular
 
-# Install dependencies
+## Install dependencies
 npm install
 
-# Start the app
+## Start the app
 ng serve
 
 ##Game Logic
